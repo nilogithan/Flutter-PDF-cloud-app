@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "508572208850",
+    "firebase_url": "https://flutter-pdf-reader.firebaseio.com",
+    "project_id": "flutter-pdf-reader",
+    "storage_bucket": "flutter-pdf-reader.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508572208850:android:51bb1ca137af7287f3e70b",
+        "android_client_info": {
+          "package_name": "com.nilogithan.flutter_pdf_reader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508572208850-vbdre0jd34g9l24r2uvk7f32u7ki7deq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA_OhjFQz8KOzezFA1V-kKPGLFwn7_i1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508572208850-vbdre0jd34g9l24r2uvk7f32u7ki7deq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
