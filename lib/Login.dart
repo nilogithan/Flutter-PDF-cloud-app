@@ -13,6 +13,7 @@ class _LoginPageState extends State<LoginPage>{
   String _Username;
   String _password;
   final formkey = new GlobalKey<FormState>();
+  final key = new GlobalKey<ScaffoldState>();
 
   void ValidateAndSave(){
     final Form = formkey.currentState;
@@ -27,9 +28,12 @@ class _LoginPageState extends State<LoginPage>{
       Navigator.push(context,
       MaterialPageRoute(builder: (context) => HomePage()));
     }else{
-      SnackBar(
-          content: const Text('Added to favorite')
-      );
+      key.currentState.showSnackBar(new SnackBar(
+        content: new Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[Text('Username or Password is wrong')],
+        ),
+      ));
     }
   }
 
@@ -64,6 +68,7 @@ class _LoginPageState extends State<LoginPage>{
     ScreenUtil.instance =
         ScreenUtil(width: 750, height: 1200, allowFontScaling: true);
     return new Scaffold(
+      key: key,
       backgroundColor: Colors.white,
       resizeToAvoidBottomPadding: true,
       body: Stack(
